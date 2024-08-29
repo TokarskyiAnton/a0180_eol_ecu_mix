@@ -3,6 +3,9 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
         "board_outline_line_width": 0.09999999999999999,
         "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
@@ -56,6 +59,32 @@
         }
       ],
       "drc_exclusions": [],
+      "meander_settings": {
+        "diff_pair_meander_defaults": {
+          "corner_radius_percentage": 100,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.1,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_meander_defaults": {
+          "corner_radius_percentage": 100,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.1,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "skew_meander_defaults": {
+          "corner_radius_percentage": 100,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.1,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -823,7 +852,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "${MY_PAGE_TEMPLATE}/arxtron_page_template.kicad_wks"
+    "page_layout_descr_file": "C:/Users/anton_tokarskyi.ARXTRON/Dropbox/kicad/arxtron_lib/arxtron_page_template/ARX_FORMAT_V799.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -1003,6 +1032,7 @@
       "operating_point_overlay_i_range": "~A",
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
       "pin_symbol_size": 0.0,
       "text_offset_ratio": 0.08
     },
