@@ -4,7 +4,9 @@
 # Folder
 ict_qc/
 doc/
+*-backups/
 gerber/Transcode\ Report.txt
+
 
 
 # Temporary files
@@ -34,9 +36,9 @@ fp-info-cache
 *.csv
 
 # Model 
-*.step
+#*.step
 *.wrl
-*.STEP
+#*.STEP
 *.stp
 *.igs
 

@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.09999999999999999,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 2.0,
         "copper_text_size_v": 2.0,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 2,
         "dimension_units": 3,
         "dimensions": {
@@ -24,24 +24,24 @@
           "text_position": 1,
           "units_format": 0
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
-        "fab_text_thickness": 0.09999999999999999,
+        "fab_text_thickness": 0.1,
         "fab_text_upright": false,
-        "other_line_width": 0.09999999999999999,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
-        "other_text_thickness": 0.09999999999999999,
+        "other_text_thickness": 0.1,
         "other_text_upright": false,
         "pads": {
           "drill": 2.9,
           "height": 3.7,
           "width": 3.7
         },
-        "silk_line_width": 0.19999999999999998,
+        "silk_line_width": 0.2,
         "silk_text_italic": false,
         "silk_text_size_h": 1.2,
         "silk_text_size_v": 1.2,
@@ -96,15 +96,20 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -114,9 +119,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -131,7 +138,9 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -143,19 +152,20 @@
       "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.19999999999999998,
+        "min_clearance": 0.2,
         "min_connection": 0.15,
         "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.5,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 1.0,
         "min_text_thickness": 0.24,
         "min_through_hole_diameter": 0.25,
-        "min_track_width": 0.19999999999999998,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
@@ -163,10 +173,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -214,6 +225,32 @@
         1.5,
         2.0
       ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
       "via_dimensions": [
         {
           "diameter": 0.0,
@@ -226,6 +263,14 @@
       ],
       "zones_allow_external_fillets": false
     },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
+    },
+    "layer_pairs": [],
     "layer_presets": [
       {
         "activeLayer": -2,
@@ -235,9 +280,7 @@
           2,
           3,
           4,
-          5,
           6,
-          7,
           8,
           9,
           10,
@@ -247,7 +290,6 @@
           14,
           15,
           16,
-          17,
           18,
           19,
           20,
@@ -259,20 +301,23 @@
           26,
           27,
           28,
-          29,
           30,
-          31,
           32,
           33,
           34,
           35,
+          36,
+          37,
           38,
           39,
+          40,
           41,
           42,
           43,
           44,
           45,
+          46,
+          47,
           48,
           49,
           50,
@@ -282,45 +327,28 @@
           54,
           55,
           56,
-          57,
           58,
-          59
+          60,
+          62
         ],
         "name": "AllCuFab",
         "renderLayers": [
-          125,
-          126,
-          127,
-          128,
-          129,
-          130,
-          133,
-          134,
-          135,
-          137,
-          138,
-          140,
-          141,
-          143,
-          144,
-          145,
-          146,
-          147,
-          148,
-          149,
-          150,
-          151,
-          152,
-          153,
-          154,
-          155,
-          157,
-          158,
-          159,
-          160,
-          161,
-          164,
-          165
+          "vias",
+          "footprint_text",
+          "footprint_anchors",
+          "grid",
+          "footprints_front",
+          "footprints_back",
+          "footprint_references",
+          "tracks",
+          "drc_errors",
+          "drawing_sheet",
+          "bitmaps",
+          "pads",
+          "zones",
+          "drc_warnings",
+          "locked_item_shadows",
+          "conflict_shadows"
         ]
       }
     ],
@@ -517,10 +545,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -533,9 +566,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -546,8 +584,8 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "A0180_eol_ecu_mix.kicad_pro",
-    "version": 1
+    "filename": "a0180_eol_ecu_mix.kicad_pro",
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -562,6 +600,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -579,6 +618,7 @@
         "microvia_drill": 0.1,
         "name": "AI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -596,6 +636,7 @@
         "microvia_drill": 0.1,
         "name": "AO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -613,6 +654,7 @@
         "microvia_drill": 0.1,
         "name": "CAN",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -630,6 +672,7 @@
         "microvia_drill": 0.1,
         "name": "DIO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -647,6 +690,7 @@
         "microvia_drill": 0.1,
         "name": "POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.6,
@@ -664,6 +708,7 @@
         "microvia_drill": 0.1,
         "name": "PSI5",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -681,6 +726,7 @@
         "microvia_drill": 0.1,
         "name": "SIGNAL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -689,7 +735,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -848,14 +894,15 @@
       "plot": "",
       "pos_files": "../../../../../Users/anton_tokarskyi.ARXTRON/Documents/VisualPlace/A0177_G3/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "A0180_eol_ecu_mix.step",
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "C:/Users/anton_tokarskyi.ARXTRON/Dropbox/kicad/arxtron_lib/arxtron_page_template/ARX_FORMAT_V799.kicad_wks"
+    "page_layout_descr_file": "${MY_PAGE_TEMPLATE}/arx_format.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -877,7 +924,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -886,37 +933,37 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Qty",
-          "name": "Quantity",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "Item Number",
           "show": false
         },
         {
+          "group_by": true,
+          "label": "Do Not Place",
+          "name": "${DNP}",
+          "show": true
+        },
+        {
           "group_by": false,
-          "label": "Frequency",
-          "name": "Frequency",
-          "show": false
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": true
         },
         {
           "group_by": false,
@@ -1006,15 +1053,53 @@
           "group_by": false,
           "label": "fit_field",
           "name": "fit_field",
-          "show": true
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "Quantity",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "Item Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Frequency",
+          "name": "Frequency",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
@@ -1051,8 +1136,9 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "C:\\Users\\anton_tokarskyi.ARXTRON\\Dropbox\\kicad\\arxtron_lib\\arxtron_page_template\\ARX_FORMAT_V799.kicad_wks",
+    "page_layout_descr_file": "${MY_PAGE_TEMPLATE}/arx_format.kicad_wks",
     "plot_directory": "./",
+    "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -1066,7 +1152,7 @@
   "sheets": [
     [
       "a505f839-056b-47d1-a2e3-8d0a1723ab23",
-      ""
+      "Root"
     ],
     [
       "00000000-0000-0000-0000-00005c90f572",
@@ -1113,5 +1199,22 @@
       "CFG_CH[4..7]"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "ASSY_NAME": "DEF",
+    "ASSY_VARIANT": "V0",
+    "COMMENT6": "COMMENT6",
+    "COMPANY": "ARXTRON TECHNOLOGIES",
+    "COMPANY_NAME1": "ARXTRON",
+    "COMPANY_NAME2": "TECHNOLOGIES",
+    "DESIGNED": "ANTON TOKARSKYI",
+    "PART_NUM": "A0180",
+    "PART_NUM_ICT": "",
+    "PCB_NAME": "EOL ECU MIX CARD",
+    "PCB_NAME_PRINTED": "ECU MIX",
+    "PRJ_NAME": "EOL ECU RCM8 RCM9",
+    "PRJ_NUM": "PRJ22180",
+    "REVISION": "R11",
+    "REVISION_PCB": "REVISION_PCB",
+    "REVISION_SCH": "REVISION_SCH"
+  }
 }
