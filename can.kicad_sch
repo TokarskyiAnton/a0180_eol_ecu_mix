@@ -5,14 +5,15 @@
 	(uuid "cd97e481-7a3d-40f4-896a-6ba2df745fd8")
 	(paper "A3")
 	(title_block
-		(title "EOL ECU MIX CARD")
-		(date "2023-09-26")
-		(rev "0C")
-		(company "ARXTRON TECHNOLOGIES")
-		(comment 1 "A0180-V0")
-		(comment 2 "PRJ22180")
-		(comment 3 "EOL ECU RCM8 RCM9")
-		(comment 4 "ANTON TOKARSKYI")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(date "2025-03-12")
+		(rev "${REVISION}${REVISION_SCH}")
+		(company "${COMPANY}")
+		(comment 1 "${PART_NUM}")
+		(comment 2 "${PRJ_NUM}")
+		(comment 3 "${PRJ_NAME}")
+		(comment 4 "${DESIGNED}")
+		(comment 5 "${PART_NUM_ICT}")
 	)
 	(lib_symbols
 		(symbol "Capacitor_AVX:06035C104KAZ2A"
@@ -644,6 +645,7 @@
 					(font
 						(size 1.524 1.524)
 					)
+					(hide yes)
 				)
 			)
 			(property "SupplierPartNumber" "SBR80520LT1GOSTR-ND"
@@ -2283,7 +2285,7 @@
 					)
 				)
 			)
-			(property "Description" "Forward Push-Pull Converters For For DC/DC Converters SMPS Transformer 3125Vrms Isolation 10kHz Surface Mount"
+			(property "Description" "SMPS TRANSFORMER 3125VRRMS ISOLATION FWD P-P DC/DC CONV 475UH SM"
 				(at 0.635 -14.605 0)
 				(effects
 					(font
@@ -2325,6 +2327,7 @@
 					(font
 						(size 1.524 1.524)
 					)
+					(hide yes)
 				)
 			)
 			(property "Manufacturer" "Wurth Electronics Inc."

@@ -21,12 +21,12 @@
       "footprints": true,
       "graphics": false,
       "keepouts": false,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": false,
       "pads": false,
       "text": true,
       "tracks": false,
-      "vias": false,
+      "vias": true,
       "zones": false
     },
     "visible_items": [
@@ -37,6 +37,7 @@
       "grid",
       "footprints_front",
       "footprints_back",
+      "footprint_values",
       "footprint_references",
       "tracks",
       "drc_errors",
@@ -49,7 +50,7 @@
       "shapes"
     ],
     "visible_layers": "00000000_00000000_0fffffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "repo_password": "",
@@ -117,7 +118,7 @@
     "sorting_column": 0
   },
   "open_jobsets": [
-    "..\\..\\..\\..\\kicad\\arxtron_lib\\arxtron_prj_template\\arx_job.kicad_jobset"
+    "..\\..\\..\\kicad\\arxtron_lib\\arxtron_prj_template\\arx_job.kicad_jobset"
   ],
   "project": {
     "files": []

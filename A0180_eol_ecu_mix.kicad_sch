@@ -5,9 +5,9 @@
 	(uuid "a505f839-056b-47d1-a2e3-8d0a1723ab23")
 	(paper "A3")
 	(title_block
-		(title "${PART_NUM} ${PCB_NAME} ${REVISION} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
 		(date "2025-03-12")
-		(rev "${REVISION}")
+		(rev "${REVISION}${REVISION_SCH}")
 		(company "${COMPANY}")
 		(comment 1 "${PART_NUM}")
 		(comment 2 "${PRJ_NUM}")
@@ -558,7 +558,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Phoenix:1786976"
+		(symbol "Connector_Phoenix:1787153"
 			(pin_names
 				(offset 1.016)
 			)
@@ -573,7 +573,7 @@
 					)
 				)
 			)
-			(property "Value" "1786976"
+			(property "Value" "1787153"
 				(at -11.43 -85.09 0)
 				(effects
 					(font
@@ -582,7 +582,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "_Connector_Phoenix:PHOENIX_1786976"
+			(property "Footprint" "_Connector_Phoenix:PHOENIX_1787153"
 				(at -10.16 -97.79 0)
 				(effects
 					(font
@@ -608,7 +608,7 @@
 					(hide yes)
 				)
 			)
-			(property "ManufacturerPartNumber" "1786976"
+			(property "ManufacturerPartNumber" "1787153"
 				(at -11.43 -82.55 0)
 				(effects
 					(font
@@ -625,7 +625,7 @@
 					(hide yes)
 				)
 			)
-			(property "SupplierPartNumber" "1786976-ND"
+			(property "SupplierPartNumber" "277-8749-ND"
 				(at -10.16 -87.63 0)
 				(effects
 					(font
@@ -652,7 +652,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1786976_0_1"
+			(symbol "1787153_0_1"
 				(rectangle
 					(start -16.51 -81.28)
 					(end -5.08 2.54)
@@ -665,7 +665,7 @@
 					)
 				)
 			)
-			(symbol "1786976_1_1"
+			(symbol "1787153_1_1"
 				(pin passive line
 					(at 0 0 180)
 					(length 5.08)
@@ -780,14 +780,14 @@
 					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
 					(number "7"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
@@ -798,14 +798,14 @@
 					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
 					(number "8"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
@@ -816,14 +816,14 @@
 					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
 					(number "9"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
@@ -834,14 +834,14 @@
 					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
 					(number "10"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
@@ -852,14 +852,14 @@
 					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
 					(number "11"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
@@ -870,14 +870,14 @@
 					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
 					(number "12"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.524 1.524)
 							)
 						)
 					)
@@ -3437,7 +3437,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -6.35 0 0)
 					(length 1.905)
 					(name "~"
@@ -4136,10 +4136,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "RC0805JR-071ML_0_1"
+			(symbol "RC0805JR-071ML_1_1"
 				(polyline
 					(pts
-						(xy -3.81 1.27) (xy 3.81 1.27) (xy 3.81 -1.27) (xy -3.81 -1.27) (xy -3.81 1.27)
+						(xy -3.81 1.143) (xy 3.81 1.143) (xy 3.81 -1.143) (xy -3.81 -1.143) (xy -3.81 1.143)
 					)
 					(stroke
 						(width 0)
@@ -4149,8 +4149,6 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "RC0805JR-071ML_1_1"
 				(pin passive line
 					(at -6.35 0 0)
 					(length 2.54)
@@ -7170,7 +7168,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 267.97) (xy 273.05 267.97)
+			(xy 279.4 267.97) (xy 276.86 267.97)
 		)
 		(stroke
 			(width 0)
@@ -8720,6 +8718,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 265.43) (xy 270.51 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9596dd10-4e0a-49f0-a5d1-d8cc6e3cb566")
+	)
+	(wire
+		(pts
 			(xy 386.08 72.39) (xy 391.16 72.39)
 		)
 		(stroke
@@ -9260,7 +9268,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 265.43) (xy 275.59 267.97)
+			(xy 279.4 265.43) (xy 279.4 267.97)
 		)
 		(stroke
 			(width 0)
@@ -9690,7 +9698,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 265.43) (xy 273.05 267.97)
+			(xy 276.86 265.43) (xy 276.86 267.97)
 		)
 		(stroke
 			(width 0)
@@ -9737,6 +9745,16 @@
 			(type default)
 		)
 		(uuid "df1aa27c-9219-4fc7-ad1c-21817efd7a37")
+	)
+	(wire
+		(pts
+			(xy 270.51 267.97) (xy 267.97 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4f0e4a-a09d-4f14-a2d0-a920d4a7a5d8")
 	)
 	(wire
 		(pts
@@ -9817,6 +9835,16 @@
 			(type default)
 		)
 		(uuid "e3c768e8-1afa-460c-ac9c-15cfac06ff36")
+	)
+	(wire
+		(pts
+			(xy 267.97 265.43) (xy 267.97 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ecaecd-9528-4d5a-af0d-7bcb6c1c7d12")
 	)
 	(wire
 		(pts
@@ -19029,12 +19057,12 @@
 		(uuid "91b33db2-bf91-4697-b45f-efa1d1235b88")
 	)
 	(label "PS-"
-		(at 273.05 265.43 180)
+		(at 276.86 265.43 90)
 		(effects
 			(font
 				(size 1.524 1.524)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "91e6e87d-be05-4297-965e-0d3202e753c8")
 	)
@@ -19487,6 +19515,16 @@
 			(justify left bottom)
 		)
 		(uuid "b5c2260d-06ba-4cca-933a-d4b2214e3236")
+	)
+	(label "24V_PWR"
+		(at 267.97 265.43 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "b609af26-5eef-4ab9-a92a-5cbab3ae6bea")
 	)
 	(label "24V_PWR"
 		(at 95.25 114.3 0)
@@ -26877,7 +26915,7 @@
 	)
 	(symbol
 		(lib_id "_power_symbol:PWR_FLAG")
-		(at 275.59 265.43 0)
+		(at 279.4 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26885,7 +26923,7 @@
 		(dnp no)
 		(uuid "aa6d7226-d3e2-4e1d-ad1c-0b499c00dc05")
 		(property "Reference" "#FLG08"
-			(at 275.59 263.017 0)
+			(at 279.4 263.017 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26894,7 +26932,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 275.59 260.858 0)
+			(at 279.4 260.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26903,7 +26941,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 275.59 265.43 0)
+			(at 279.4 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26911,7 +26949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 275.59 265.43 0)
+			(at 279.4 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26919,7 +26957,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 275.59 265.43 0)
+			(at 279.4 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27775,6 +27813,70 @@
 			(project "A0180_eol_ecu_mix"
 				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23"
 					(reference "C79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_power_symbol:PWR_FLAG")
+		(at 270.51 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c73a5610-f83d-45e8-9f0f-1f7f064c4e30")
+		(property "Reference" "#FLG03"
+			(at 270.51 263.017 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 270.51 260.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 270.51 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e70ee2cf-fc79-4ca9-b50b-0bd30986cfba")
+		)
+		(instances
+			(project "a0180_eol_ecu_mix"
+				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -29399,7 +29501,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Phoenix:1786976")
+		(lib_id "Connector_Phoenix:1787153")
 		(at 391.16 21.59 0)
 		(mirror y)
 		(unit 1)
@@ -29416,7 +29518,7 @@
 				)
 			)
 		)
-		(property "Value" "1786976"
+		(property "Value" "1787153"
 			(at 402.59 106.68 0)
 			(effects
 				(font
@@ -29425,7 +29527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_Connector_Phoenix:PHOENIX_1786976"
+		(property "Footprint" "_Connector_Phoenix:PHOENIX_1787153"
 			(at 401.32 119.38 0)
 			(effects
 				(font
@@ -29451,7 +29553,7 @@
 				(hide yes)
 			)
 		)
-		(property "ManufacturerPartNumber" "1786976"
+		(property "ManufacturerPartNumber" "1787153"
 			(at 402.59 104.14 0)
 			(effects
 				(font
@@ -29468,7 +29570,7 @@
 				(hide yes)
 			)
 		)
-		(property "SupplierPartNumber" "1786976-ND"
+		(property "SupplierPartNumber" "277-8749-ND"
 			(at 401.32 109.22 0)
 			(effects
 				(font

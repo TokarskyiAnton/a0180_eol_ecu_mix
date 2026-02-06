@@ -5,14 +5,15 @@
 	(uuid "85c940fa-d0de-4af0-8764-34f2951428c2")
 	(paper "A3")
 	(title_block
-		(title "EOL ECU MIX CARD")
-		(date "2023-09-26")
-		(rev "0C")
-		(company "ARXTRON TECHNOLOGIES")
-		(comment 1 "A0180-V0")
-		(comment 2 "PRJ22180")
-		(comment 3 "EOL ECU RCM8 RCM9")
-		(comment 4 "ANTON TOKARSKYI")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(date "2025-03-12")
+		(rev "${REVISION}${REVISION_SCH}")
+		(company "${COMPANY}")
+		(comment 1 "${PART_NUM}")
+		(comment 2 "${PRJ_NUM}")
+		(comment 3 "${PRJ_NAME}")
+		(comment 4 "${DESIGNED}")
+		(comment 5 "${PART_NUM_ICT}")
 	)
 	(lib_symbols
 		(symbol "Capacitor_AVX:06035C104KAZ2A"
@@ -223,8 +224,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "XW"
-				(at 12.7 3.81 0)
+			(property "Reference" "SW"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -232,7 +233,7 @@
 				)
 			)
 			(property "Value" "CHS-04TB"
-				(at 11.43 -15.24 0)
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -241,7 +242,7 @@
 				)
 			)
 			(property "Footprint" "_Copal:COPAL_CHS-04TB"
-				(at 11.43 -30.48 0)
+				(at 0 -25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -257,8 +258,8 @@
 					)
 				)
 			)
-			(property "Description" "SWITCH SLIDE 4 POS DIP SPST 100MA 6V"
-				(at 11.43 -20.32 0)
+			(property "Description" "SWITCH SLIDE 4POS 1.27MM DIP SPST 100MA 6V"
+				(at 0 -15.24 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -267,7 +268,7 @@
 				)
 			)
 			(property "SupplierDevicePackage" "Surface Mount"
-				(at 11.43 -27.94 0)
+				(at 0 -22.86 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -276,7 +277,7 @@
 				)
 			)
 			(property "ManufacturerPartNumber" "CHS-04TB"
-				(at 11.43 -12.7 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -284,7 +285,7 @@
 				)
 			)
 			(property "SupplierPartNumber" "563-1008-1-ND"
-				(at 11.43 -17.78 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -293,7 +294,7 @@
 				)
 			)
 			(property "Supplier" "Digi-Key"
-				(at 11.43 -25.4 0)
+				(at 0 -20.32 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -302,7 +303,7 @@
 				)
 			)
 			(property "Manufacturer" "Copal Electronics Inc."
-				(at 11.43 -22.86 0)
+				(at 0 -17.78 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -312,8 +313,8 @@
 			)
 			(symbol "CHS-04TB_0_1"
 				(rectangle
-					(start 5.08 2.54)
-					(end 19.05 -10.16)
+					(start -10.16 6.35)
+					(end 10.16 -6.35)
 					(stroke
 						(width 0)
 						(type solid)
@@ -324,19 +325,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 1.27) (xy 10.795 0) (xy 8.255 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 13.335 0) (xy 15.875 0)
+						(xy 0.635 5.08) (xy -1.905 3.81) (xy -4.445 3.81)
 					)
 					(stroke
 						(width 0)
@@ -348,7 +337,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -1.27) (xy 10.795 -2.54) (xy 8.255 -2.54)
+						(xy 0.635 3.81) (xy 3.175 3.81)
 					)
 					(stroke
 						(width 0)
@@ -360,7 +349,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -2.54) (xy 15.875 -2.54)
+						(xy 0.635 2.54) (xy -1.905 1.27) (xy -4.445 1.27)
 					)
 					(stroke
 						(width 0)
@@ -372,7 +361,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -3.81) (xy 10.795 -5.08) (xy 8.255 -5.08)
+						(xy 0.635 1.27) (xy 3.175 1.27)
 					)
 					(stroke
 						(width 0)
@@ -384,7 +373,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -5.08) (xy 15.875 -5.08)
+						(xy 0.635 0) (xy -1.905 -1.27) (xy -4.445 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -396,7 +385,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -6.35) (xy 10.795 -7.62) (xy 8.255 -7.62)
+						(xy 0.635 -1.27) (xy 3.175 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -408,7 +397,19 @@
 				)
 				(polyline
 					(pts
-						(xy 13.335 -7.62) (xy 15.875 -7.62)
+						(xy 0.635 -2.54) (xy -1.905 -3.81) (xy -4.445 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -3.81) (xy 3.175 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -421,80 +422,8 @@
 			)
 			(symbol "CHS-04TB_1_1"
 				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 24.13 0 180)
-					(length 5.08)
+					(at -17.78 3.81 0)
+					(length 7.62)
 					(name "~"
 						(effects
 							(font
@@ -502,7 +431,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "A1"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -511,8 +440,8 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 -2.54 180)
-					(length 5.08)
+					(at -17.78 1.27 0)
+					(length 7.62)
 					(name "~"
 						(effects
 							(font
@@ -520,7 +449,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "A2"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -529,8 +458,8 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 -5.08 180)
-					(length 5.08)
+					(at -17.78 -1.27 0)
+					(length 7.62)
 					(name "~"
 						(effects
 							(font
@@ -538,7 +467,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "A3"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -547,8 +476,8 @@
 					)
 				)
 				(pin passive line
-					(at 24.13 -7.62 180)
-					(length 5.08)
+					(at -17.78 -3.81 0)
+					(length 7.62)
 					(name "~"
 						(effects
 							(font
@@ -556,7 +485,79 @@
 							)
 						)
 					)
-					(number "5"
+					(number "A4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 3.81 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 1.27 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -1.27 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -3.81 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "B4"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -2924,7 +2925,7 @@
 		(uuid "e36f0c83-24b5-4ac8-ade4-4f417ff8463d")
 	)
 	(junction
-		(at 344.17 45.72)
+		(at 355.6 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed299e6e-d841-45f0-9912-7cd56200fde7")
@@ -2936,7 +2937,7 @@
 		(uuid "ee07596e-f1c4-4cda-bdf4-9a660b5e2a9b")
 	)
 	(junction
-		(at 344.17 48.26)
+		(at 355.6 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef380ef0-66ca-4e45-9bb5-f28c96a699ef")
@@ -2964,7 +2965,7 @@
 		(uuid "6d37b5c9-5340-478e-80fc-31a412b19eba")
 	)
 	(no_connect
-		(at 341.63 50.8)
+		(at 353.06 50.8)
 		(uuid "b0fd10ca-336b-4941-8380-15d17077e29f")
 	)
 	(no_connect
@@ -3051,7 +3052,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 43.18) (xy 344.17 45.72)
+			(xy 355.6 43.18) (xy 355.6 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3081,7 +3082,7 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 48.26) (xy 344.17 48.26)
+			(xy 353.06 48.26) (xy 355.6 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3211,7 +3212,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 45.72) (xy 344.17 48.26)
+			(xy 355.6 45.72) (xy 355.6 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3371,7 +3372,7 @@
 	)
 	(wire
 		(pts
-			(xy 341.63 45.72) (xy 344.17 45.72)
+			(xy 353.06 45.72) (xy 355.6 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3411,7 +3412,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 43.18) (xy 341.63 43.18)
+			(xy 355.6 43.18) (xy 353.06 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3791,7 +3792,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 48.26) (xy 344.17 53.34)
+			(xy 355.6 48.26) (xy 355.6 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6361,7 +6362,7 @@
 	)
 	(symbol
 		(lib_id "_power_symbol:GND_3V3")
-		(at 344.17 53.34 0)
+		(at 355.6 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6369,7 +6370,7 @@
 		(dnp no)
 		(uuid "9956c4aa-73d6-4b85-8aff-d56747d85f3e")
 		(property "Reference" "#PWR075"
-			(at 344.17 59.69 0)
+			(at 355.6 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6378,7 +6379,7 @@
 			)
 		)
 		(property "Value" "GND_3V3"
-			(at 344.17 57.15 0)
+			(at 355.6 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6387,7 +6388,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 344.17 53.34 0)
+			(at 355.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6395,7 +6396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 344.17 53.34 0)
+			(at 355.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6403,7 +6404,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 344.17 53.34 0)
+			(at 355.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6412,7 +6413,7 @@
 			)
 		)
 		(property "ShortName" "G3V3"
-			(at 343.408 52.705 90)
+			(at 354.838 52.705 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -6433,7 +6434,7 @@
 	)
 	(symbol
 		(lib_id "CopalElectronics:CHS-04TB")
-		(at 341.63 43.18 0)
+		(at 335.28 46.99 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6442,7 +6443,7 @@
 		(dnp no)
 		(uuid "9b810cd0-455c-4176-b6ae-60557fc1d212")
 		(property "Reference" "XW1"
-			(at 328.93 39.37 0)
+			(at 335.28 39.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6450,7 +6451,7 @@
 			)
 		)
 		(property "Value" "CHS-04TB"
-			(at 328.93 55.88 0)
+			(at 322.58 59.69 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6459,7 +6460,7 @@
 			)
 		)
 		(property "Footprint" "_Copal:COPAL_CHS-04TB"
-			(at 331.47 60.96 0)
+			(at 325.12 64.77 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6468,7 +6469,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 339.09 39.37 0)
+			(at 332.74 43.18 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6476,7 +6477,7 @@
 			)
 		)
 		(property "Description" "SWITCH SLIDE 4 POS DIP SPST 100MA 6V"
-			(at 328.93 58.42 0)
+			(at 322.58 62.23 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6485,7 +6486,7 @@
 			)
 		)
 		(property "SupplierDevicePackage" "Surface Mount"
-			(at 328.93 73.66 0)
+			(at 322.58 77.47 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6494,7 +6495,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "CHS-04TB"
-			(at 330.2 63.5 0)
+			(at 323.85 67.31 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6502,7 +6503,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 329.565 67.945 0)
+			(at 323.215 71.755 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6511,7 +6512,7 @@
 			)
 		)
 		(property "Manufacturer" "Copal Electronics Inc."
-			(at 329.565 71.12 0)
+			(at 323.215 74.93 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -6520,7 +6521,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "563-1008-1-ND"
-			(at 570.23 175.26 0)
+			(at 563.88 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6528,28 +6529,28 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin "B2"
 			(uuid "55872f13-f21b-4fcf-9d79-7156ad1228ad")
 		)
-		(pin "2"
+		(pin "A4"
 			(uuid "1743c006-00f6-4f60-a01e-8c459faee79c")
 		)
-		(pin "3"
+		(pin "B1"
 			(uuid "e85919a4-4f23-4ae6-9098-7e4f462ea679")
 		)
-		(pin "4"
+		(pin "B4"
 			(uuid "fbf8b854-2b4c-405f-89b4-559aa86a2fc7")
 		)
-		(pin "5"
+		(pin "A3"
 			(uuid "67498155-4856-40fe-a35c-88065028b753")
 		)
-		(pin "6"
+		(pin "A1"
 			(uuid "20d79400-cb80-4315-96c7-06b2fe8582a3")
 		)
-		(pin "7"
+		(pin "B3"
 			(uuid "a61340c9-9a1b-4ab7-9851-a48da4fbffc5")
 		)
-		(pin "8"
+		(pin "A2"
 			(uuid "ce417c43-be34-4b74-9783-6b2dba378f00")
 		)
 		(instances

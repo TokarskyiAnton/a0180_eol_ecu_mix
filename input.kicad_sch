@@ -5,14 +5,15 @@
 	(uuid "7e6bd31e-0492-4be6-950a-71cb1c372472")
 	(paper "A3")
 	(title_block
-		(title "EOL ECU MIX CARD")
-		(date "2023-09-26")
-		(rev "0C")
-		(company "ARXTRON TECHNOLOGIES")
-		(comment 1 "A0180-V0")
-		(comment 2 "PRJ22180")
-		(comment 3 "EOL ECU RCM8 RCM9")
-		(comment 4 "ANTON TOKARSKYI")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(date "2025-03-12")
+		(rev "${REVISION}${REVISION_SCH}")
+		(company "${COMPANY}")
+		(comment 1 "${PART_NUM}")
+		(comment 2 "${PRJ_NUM}")
+		(comment 3 "${PRJ_NAME}")
+		(comment 4 "${DESIGNED}")
+		(comment 5 "${PART_NUM_ICT}")
 	)
 	(lib_symbols
 		(symbol "Capacitor_AVX:06035C104KAZ2A"

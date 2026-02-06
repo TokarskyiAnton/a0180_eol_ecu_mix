@@ -5,14 +5,15 @@
 	(uuid "1c99862f-56fd-430c-926d-0da01e6ec137")
 	(paper "A3")
 	(title_block
-		(title "EOL ECU MIX CARD")
-		(date "2023-09-26")
-		(rev "0C")
-		(company "ARXTRON TECHNOLOGIES")
-		(comment 1 "A0180-V0")
-		(comment 2 "PRJ22180")
-		(comment 3 "EOL ECU RCM8 RCM9")
-		(comment 4 "ANTON TOKARSKYI")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(date "2025-03-12")
+		(rev "${REVISION}${REVISION_SCH}")
+		(company "${COMPANY}")
+		(comment 1 "${PART_NUM}")
+		(comment 2 "${PRJ_NUM}")
+		(comment 3 "${PRJ_NAME}")
+		(comment 4 "${DESIGNED}")
+		(comment 5 "${PART_NUM_ICT}")
 	)
 	(lib_symbols
 		(symbol "Connector_Samtec:SLW-117-01-L-D_VAR1"
@@ -880,7 +881,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -6.35 0 0)
 					(length 1.905)
 					(name "~"

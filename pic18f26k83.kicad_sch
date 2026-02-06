@@ -5,14 +5,15 @@
 	(uuid "6263d661-cb59-4d13-b346-677ca0d1554f")
 	(paper "A3")
 	(title_block
-		(title "EOL ECU MIX CARD")
-		(date "2023-09-26")
-		(rev "0C")
-		(company "ARXTRON TECHNOLOGIES")
-		(comment 1 "A0180-V0")
-		(comment 2 "PRJ22180")
-		(comment 3 "EOL ECU RCM8 RCM9")
-		(comment 4 "ANTON TOKARSKYI")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(date "2025-03-12")
+		(rev "${REVISION}${REVISION_SCH}")
+		(company "${COMPANY}")
+		(comment 1 "${PART_NUM}")
+		(comment 2 "${PRJ_NUM}")
+		(comment 3 "${PRJ_NAME}")
+		(comment 4 "${DESIGNED}")
+		(comment 5 "${PART_NUM_ICT}")
 	)
 	(lib_symbols
 		(symbol "Capacitor_AVX:06035C104KAZ2A"
@@ -787,7 +788,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "P"
-				(at 1.27 7.62 0)
+				(at -12.065 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -795,7 +796,7 @@
 				)
 			)
 			(property "Value" "SSW-106-02-G-S"
-				(at 3.81 -20.32 0)
+				(at -7.62 -25.4 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -804,7 +805,7 @@
 				)
 			)
 			(property "Footprint" "_Connector_Samtec:SAMTEC_SSW-106-02-G-S"
-				(at 3.81 -27.94 0)
+				(at -7.62 -33.02 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -822,7 +823,7 @@
 				)
 			)
 			(property "Description" "CONN HDR 6POS 0.1 GOLD PCB"
-				(at 3.81 -15.24 0)
+				(at -7.62 -20.32 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -831,15 +832,16 @@
 				)
 			)
 			(property "ManufacturerPartNumber" "SSW-106-02-G-S"
-				(at 3.81 -10.16 0)
+				(at -7.62 -15.24 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(hide yes)
 				)
 			)
 			(property "SupplierPartNumber" "SSW-106-02-G-S"
-				(at 3.81 -12.7 0)
+				(at -7.62 -17.78 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -848,7 +850,7 @@
 				)
 			)
 			(property "Supplier" "Samtec Inc."
-				(at 3.81 -25.4 0)
+				(at -7.62 -30.48 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -857,7 +859,7 @@
 				)
 			)
 			(property "Manufacturer" "Samtec Inc."
-				(at 5.08 -17.78 0)
+				(at -8.89 -22.86 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -867,8 +869,8 @@
 			)
 			(symbol "SSW-106-02-G-S_1_1"
 				(rectangle
-					(start 0 6.35)
-					(end 7.62 -8.89)
+					(start -15.24 2.54)
+					(end -3.81 -13.97)
 					(stroke
 						(width 0)
 						(type solid)
@@ -878,7 +880,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 5.08 0)
+					(at 0 0 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -896,7 +898,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 2.54 0)
+					(at 0 -2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -914,7 +916,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 0 0)
+					(at 0 -5.08 180)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -932,7 +934,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 -2.54 0)
+					(at 0 -7.62 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -950,7 +952,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 -5.08 0)
+					(at 0 -10.16 180)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -968,7 +970,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 -7.62 0)
+					(at 0 -12.7 180)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -1284,7 +1286,7 @@
 				)
 				(circle
 					(center 0 0)
-					(radius 2.8448)
+					(radius 2.159)
 					(stroke
 						(width 0)
 						(type solid)
@@ -7757,8 +7759,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Samtec:SSW-106-02-G-S")
-		(at 43.18 146.05 0)
-		(mirror y)
+		(at 46.99 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7766,7 +7767,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d2d38fa")
 		(property "Reference" "PROG1"
-			(at 39.37 138.43 0)
+			(at 39.37 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7774,7 +7775,7 @@
 			)
 		)
 		(property "Value" "SSW-106-02-G-S"
-			(at 39.37 166.37 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7783,7 +7784,7 @@
 			)
 		)
 		(property "Footprint" "_Connector_Samtec:SAMTEC_SSW-106-02-G-S"
-			(at 39.37 173.99 0)
+			(at 50.8 168.91 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7792,7 +7793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 146.05 0)
+			(at 48.26 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7801,7 +7802,7 @@
 			)
 		)
 		(property "Description" "CONN HDR 6POS 0.1 GOLD PCB"
-			(at 39.37 161.29 0)
+			(at 50.8 156.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7810,15 +7811,16 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "SSW-106-02-G-S"
-			(at 39.37 156.21 0)
+			(at 50.8 151.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(hide yes)
 			)
 		)
 		(property "Supplier" "Samtec Inc."
-			(at 39.37 171.45 0)
+			(at 50.8 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7827,7 +7829,7 @@
 			)
 		)
 		(property "Manufacturer" "Samtec Inc."
-			(at 38.1 163.83 0)
+			(at 52.07 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7836,7 +7838,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "SSW-106-02-G-S"
-			(at 39.37 158.75 0)
+			(at 50.8 153.67 0)
 			(effects
 				(font
 					(size 1.524 1.524)

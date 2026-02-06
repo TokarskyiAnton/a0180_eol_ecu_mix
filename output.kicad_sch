@@ -5,14 +5,15 @@
 	(uuid "a1f5c997-0d93-4706-a8a8-9c4d70e56929")
 	(paper "A3")
 	(title_block
-		(title "EOL ECU MIX CARD")
-		(date "2023-09-26")
-		(rev "0C")
-		(company "ARXTRON TECHNOLOGIES")
-		(comment 1 "A0180-V0")
-		(comment 2 "PRJ22180")
-		(comment 3 "EOL ECU RCM8 RCM9")
-		(comment 4 "ANTON TOKARSKYI")
+		(title "${PART_NUM} ${PCB_NAME} ${ASSY_VARIANT} ${ASSY_NAME}")
+		(date "2025-03-12")
+		(rev "${REVISION}${REVISION_SCH}")
+		(company "${COMPANY}")
+		(comment 1 "${PART_NUM}")
+		(comment 2 "${PRJ_NUM}")
+		(comment 3 "${PRJ_NAME}")
+		(comment 4 "${DESIGNED}")
+		(comment 5 "${PART_NUM_ICT}")
 	)
 	(lib_symbols
 		(symbol "Capacitor_AVX:06035C104KAZ2A"
@@ -743,7 +744,7 @@
 				)
 				(circle
 					(center 0 0)
-					(radius 2.8448)
+					(radius 2.159)
 					(stroke
 						(width 0)
 						(type solid)
@@ -1571,7 +1572,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -6.35 0 0)
 					(length 1.905)
 					(name "~"
@@ -8185,6 +8186,16 @@
 		)
 		(uuid "03c7d5e4-8845-47ce-a820-41a2bdc036f4")
 	)
+	(label "24V"
+		(at 398.78 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04b34dc1-bff6-4f22-b2d6-257604c4a267")
+	)
 	(label "ISO_GPB7"
 		(at 213.36 251.46 0)
 		(effects
@@ -8264,6 +8275,16 @@
 			(justify right bottom)
 		)
 		(uuid "12b24a30-4c57-4606-afb3-479e012776ab")
+	)
+	(label "24V"
+		(at 398.78 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14017e3a-a63e-4371-b3cd-919f72bed3bc")
 	)
 	(label "ISO_GPB3a"
 		(at 290.83 88.9 0)
@@ -8416,6 +8437,26 @@
 		(uuid "2fb18462-9998-4ced-85ff-e8b1d845d3f6")
 	)
 	(label "24V"
+		(at 398.78 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36544368-4fb1-4b95-a3c9-46ca252f8ada")
+	)
+	(label "24V"
+		(at 398.78 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "39b26156-3c8e-4d6d-93a7-be8d53c3e8b6")
+	)
+	(label "24V"
 		(at 334.01 48.26 0)
 		(effects
 			(font
@@ -8434,6 +8475,16 @@
 			(justify left bottom)
 		)
 		(uuid "3b1efe82-ab01-4b12-bba5-382904e23fc4")
+	)
+	(label "24V"
+		(at 398.78 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b57fadc-c74e-4c18-aad0-76b09c877fd7")
 	)
 	(label "GPB5"
 		(at 152.4 218.44 180)
@@ -8505,6 +8556,16 @@
 		)
 		(uuid "44dd3489-8bb8-47c6-a8fd-0a2c6f9150cb")
 	)
+	(label "24V"
+		(at 398.78 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45182b4f-9a42-4f2a-99f5-0b0067da21f2")
+	)
 	(label "GPA1"
 		(at 22.86 109.22 90)
 		(effects
@@ -8545,6 +8606,16 @@
 		)
 		(uuid "507e8d41-8bc2-4800-8fab-9f02a0020e4d")
 	)
+	(label "24V"
+		(at 398.78 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52bdbd9b-0207-41de-b664-342c07667a87")
+	)
 	(label "ISO_GPA6a"
 		(at 365.76 91.44 180)
 		(effects
@@ -8554,6 +8625,26 @@
 			(justify right bottom)
 		)
 		(uuid "54987b5f-a759-4f99-9d86-d3854ff477ed")
+	)
+	(label "24V"
+		(at 398.78 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55bc0786-f0a8-41e1-ab79-2d8f5e72bb53")
+	)
+	(label "24V"
+		(at 398.78 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59b5d6fd-2a4e-4687-9471-251cc845a3da")
 	)
 	(label "GPB5"
 		(at 67.31 63.5 0)
@@ -8604,6 +8695,16 @@
 			(justify right bottom)
 		)
 		(uuid "6319c28c-3d9e-4da7-8a6d-0a5d02c1d367")
+	)
+	(label "24V"
+		(at 398.78 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64bc7bfb-1f07-4b63-918d-6e40f0e0c50f")
 	)
 	(label "24V"
 		(at 31.75 19.05 0)
@@ -8835,6 +8936,16 @@
 		)
 		(uuid "7e36730c-2a31-4ef7-969c-e36c7a5a094c")
 	)
+	(label "24V"
+		(at 398.78 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e632422-d52c-4b46-9eac-11917a228b3b")
+	)
 	(label "ISO_GPA6"
 		(at 213.36 121.92 0)
 		(effects
@@ -9004,6 +9115,16 @@
 			(justify right bottom)
 		)
 		(uuid "9c635d95-df38-43cd-a635-d07b412f5f0e")
+	)
+	(label "24V"
+		(at 398.78 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d74fbd7-9b8f-4623-b5a7-ae9d37db0803")
 	)
 	(label "GPA0"
 		(at 152.4 30.48 180)
@@ -9206,6 +9327,26 @@
 		(uuid "ba50e5bb-1df8-4abe-93cb-8a935a517e68")
 	)
 	(label "24V"
+		(at 398.78 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "baebf064-a9cd-4a88-a008-4094085751b2")
+	)
+	(label "24V"
+		(at 398.78 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "baf2642c-a806-44d9-86c3-db0763e265d8")
+	)
+	(label "24V"
 		(at 334.01 86.36 0)
 		(effects
 			(font
@@ -9385,6 +9526,16 @@
 		)
 		(uuid "d8a25760-e7fb-4814-bad4-0566b8be6348")
 	)
+	(label "24V"
+		(at 398.78 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd2987d7-1ae1-46ea-a328-c38c41fcb08c")
+	)
 	(label "GPA2"
 		(at 152.4 55.88 180)
 		(effects
@@ -9424,6 +9575,16 @@
 			(justify right bottom)
 		)
 		(uuid "e5954b8f-cf95-4348-89a2-74918a4fec2f")
+	)
+	(label "24V"
+		(at 398.78 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5f8fcb2-6c46-4b93-b3a1-ff5d8279920d")
 	)
 	(label "24V"
 		(at 334.01 91.44 0)
@@ -14318,94 +14479,8 @@
 		)
 	)
 	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 140.97 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "044b536f-11b6-439c-877f-2c0b022f198e")
-		(property "Reference" "#PWR0100"
-			(at 405.13 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 140.208 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "69ae1bdd-71eb-48a6-81d4-ada9d08d496a")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR0100")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 161.29 0)
+		(at 389.89 161.29 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -14413,7 +14488,7 @@
 		(dnp yes)
 		(uuid "05a3a932-d4c5-4adf-8d47-dfa5b443b43a")
 		(property "Reference" "DS15"
-			(at 389.89 156.21 0)
+			(at 389.89 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14421,7 +14496,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 166.37 0)
+			(at 389.89 156.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14430,7 +14505,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 187.706 0)
+			(at 389.763 134.874 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14447,7 +14522,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 173.99 0)
+			(at 389.89 148.59 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14456,7 +14531,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 171.45 0)
+			(at 389.89 151.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14465,7 +14540,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 185.42 0)
+			(at 389.89 137.16 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14474,7 +14549,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 168.91 0)
+			(at 389.89 153.67 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14483,7 +14558,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 182.88 0)
+			(at 389.89 139.7 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14492,7 +14567,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 180.34 0)
+			(at 389.89 142.24 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14501,7 +14576,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 176.53 0)
+			(at 389.89 146.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15022,7 +15097,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 191.77 0)
+		(at 389.89 191.77 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -15030,7 +15105,7 @@
 		(dnp yes)
 		(uuid "118d4c22-4b4e-4e40-8c31-9c19067dec22")
 		(property "Reference" "DS18"
-			(at 389.89 186.69 0)
+			(at 389.89 196.85 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15038,7 +15113,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 196.85 0)
+			(at 389.89 186.69 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15047,7 +15122,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 218.186 0)
+			(at 389.763 165.354 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15064,7 +15139,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 204.47 0)
+			(at 389.89 179.07 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15073,7 +15148,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 201.93 0)
+			(at 389.89 181.61 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15082,7 +15157,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 215.9 0)
+			(at 389.89 167.64 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15091,7 +15166,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 199.39 0)
+			(at 389.89 184.15 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15100,7 +15175,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 213.36 0)
+			(at 389.89 170.18 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15109,7 +15184,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 210.82 0)
+			(at 389.89 172.72 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15118,7 +15193,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 207.01 0)
+			(at 389.89 176.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15233,7 +15308,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 181.61 0)
+		(at 389.89 181.61 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -15241,7 +15316,7 @@
 		(dnp yes)
 		(uuid "1bf8979f-e7b1-4f31-a6a7-8f04f5e7cb62")
 		(property "Reference" "DS17"
-			(at 389.89 176.53 0)
+			(at 389.89 186.69 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15249,7 +15324,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 186.69 0)
+			(at 389.89 176.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15258,7 +15333,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 208.026 0)
+			(at 389.763 155.194 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15275,7 +15350,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 194.31 0)
+			(at 389.89 168.91 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15284,7 +15359,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 191.77 0)
+			(at 389.89 171.45 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15293,7 +15368,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 205.74 0)
+			(at 389.89 157.48 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15302,7 +15377,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 189.23 0)
+			(at 389.89 173.99 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15311,7 +15386,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 203.2 0)
+			(at 389.89 160.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15320,7 +15395,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 200.66 0)
+			(at 389.89 162.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15329,7 +15404,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 196.85 0)
+			(at 389.89 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -15478,92 +15553,6 @@
 				)
 				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
 					(reference "K26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 50.8 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "22d8d8e4-abba-45fb-82c3-2238f82adbc0")
-		(property "Reference" "#PWR032"
-			(at 405.13 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 50.038 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "777bbb33-a8a8-4edb-80f8-486f3f712730")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR032")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -16022,178 +16011,6 @@
 				)
 				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
 					(reference "R98")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 191.77 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2bdb0c45-86b7-49c6-ad0f-537bbbf1cb50")
-		(property "Reference" "#PWR0105"
-			(at 405.13 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 191.008 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "933549ac-6d03-486a-a5e8-13e9e471d0f7")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR0105")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0209")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 30.48 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2f562cd1-fa4a-4474-a839-72a5692c389e")
-		(property "Reference" "#PWR08"
-			(at 405.13 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 29.718 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "416a9253-3379-4094-998f-4c676da5889c")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR08")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -18175,7 +17992,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 40.64 0)
+		(at 389.89 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -18183,7 +18000,7 @@
 		(dnp yes)
 		(uuid "56c3cfb1-929d-4cad-a3a4-d500604cb93b")
 		(property "Reference" "DS4"
-			(at 389.89 35.56 0)
+			(at 389.89 45.72 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18191,7 +18008,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 45.72 0)
+			(at 389.89 35.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18200,7 +18017,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 67.056 0)
+			(at 389.763 14.224 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18217,7 +18034,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 53.34 0)
+			(at 389.89 27.94 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18226,7 +18043,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 50.8 0)
+			(at 389.89 30.48 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18235,7 +18052,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 64.77 0)
+			(at 389.89 16.51 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18244,7 +18061,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 48.26 0)
+			(at 389.89 33.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18253,7 +18070,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 62.23 0)
+			(at 389.89 19.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18262,7 +18079,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 59.69 0)
+			(at 389.89 21.59 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18271,7 +18088,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 55.88 0)
+			(at 389.89 25.4 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18386,7 +18203,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 151.13 0)
+		(at 389.89 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -18394,7 +18211,7 @@
 		(dnp yes)
 		(uuid "5a98d908-9322-4c58-b66c-e2ab723aeeb0")
 		(property "Reference" "DS14"
-			(at 389.89 146.05 0)
+			(at 389.89 156.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18402,7 +18219,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 156.21 0)
+			(at 389.89 146.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18411,7 +18228,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 177.546 0)
+			(at 389.763 124.714 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18428,7 +18245,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 163.83 0)
+			(at 389.89 138.43 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18437,7 +18254,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 161.29 0)
+			(at 389.89 140.97 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18446,7 +18263,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 175.26 0)
+			(at 389.89 127 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18455,7 +18272,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 158.75 0)
+			(at 389.89 143.51 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18464,7 +18281,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 172.72 0)
+			(at 389.89 129.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18473,7 +18290,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 170.18 0)
+			(at 389.89 132.08 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18482,7 +18299,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 166.37 0)
+			(at 389.89 135.89 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18888,7 +18705,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 71.12 0)
+		(at 389.89 71.12 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -18896,7 +18713,7 @@
 		(dnp yes)
 		(uuid "5f024c2a-4752-47a9-b0e7-ea9dda55c8b8")
 		(property "Reference" "DS7"
-			(at 389.89 66.04 0)
+			(at 389.89 76.2 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18904,7 +18721,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 76.2 0)
+			(at 389.89 66.04 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18913,7 +18730,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 97.536 0)
+			(at 389.763 44.704 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18930,7 +18747,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 83.82 0)
+			(at 389.89 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18939,7 +18756,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 81.28 0)
+			(at 389.89 60.96 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18948,7 +18765,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 95.25 0)
+			(at 389.89 46.99 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18957,7 +18774,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 78.74 0)
+			(at 389.89 63.5 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18966,7 +18783,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 92.71 0)
+			(at 389.89 49.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18975,7 +18792,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 90.17 0)
+			(at 389.89 52.07 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18984,7 +18801,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 86.36 0)
+			(at 389.89 55.88 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19744,7 +19561,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 120.65 0)
+		(at 389.89 120.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -19752,7 +19569,7 @@
 		(dnp yes)
 		(uuid "6fc7aca9-ae45-4ae6-aa94-832af4fb9d0d")
 		(property "Reference" "DS11"
-			(at 389.89 115.57 0)
+			(at 389.89 125.73 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19760,7 +19577,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 125.73 0)
+			(at 389.89 115.57 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19769,7 +19586,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 147.066 0)
+			(at 389.763 94.234 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19786,7 +19603,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 133.35 0)
+			(at 389.89 107.95 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19795,7 +19612,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 130.81 0)
+			(at 389.89 110.49 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19804,7 +19621,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 144.78 0)
+			(at 389.89 96.52 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19813,7 +19630,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 128.27 0)
+			(at 389.89 113.03 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19822,7 +19639,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 142.24 0)
+			(at 389.89 99.06 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19831,7 +19648,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 139.7 0)
+			(at 389.89 101.6 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -19840,7 +19657,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 135.89 0)
+			(at 389.89 105.41 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -20301,178 +20118,6 @@
 				)
 				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
 					(reference "R78")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 181.61 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b3e14cd-2584-4408-8987-6e68c055d2c6")
-		(property "Reference" "#PWR0104"
-			(at 405.13 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 180.848 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "36723369-643d-44cd-888b-75a8c2674239")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR0104")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 151.13 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7bb059b1-d961-41b5-8d59-c2ed5358de67")
-		(property "Reference" "#PWR0101"
-			(at 405.13 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 150.368 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4d4d3ff8-0216-43bb-af18-d994fd42ada9")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -21054,92 +20699,6 @@
 		)
 	)
 	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 161.29 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "80cf60ee-0f13-4663-a578-f89bf08aa319")
-		(property "Reference" "#PWR0102"
-			(at 405.13 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 160.528 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc81eaf9-87d4-459c-b546-4cedf82f5434")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR0102")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Resistor_Yageo:RC0805FR-075K1L")
 		(at 374.65 120.65 0)
 		(unit 1)
@@ -21360,92 +20919,6 @@
 	)
 	(symbol
 		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 171.45 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "893a6510-7856-4a47-ae19-055b00799247")
-		(property "Reference" "#PWR0103"
-			(at 405.13 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 170.688 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d48c1c2-26c1-4f19-b35c-6615eff5f43c")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0207")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
 		(at 86.36 191.77 0)
 		(mirror y)
 		(unit 1)
@@ -21531,180 +21004,8 @@
 		)
 	)
 	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 40.64 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8cd577da-b689-4bb7-8dc0-35dead8f2293")
-		(property "Reference" "#PWR030"
-			(at 405.13 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 39.878 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b28ac455-09c3-42bf-bb07-004e33c694be")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR030")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 101.6 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8f58a972-feb8-423b-9071-c2321b0dfba5")
-		(property "Reference" "#PWR091"
-			(at 405.13 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 100.838 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ab22d00e-f558-40ba-883d-c4b85949f216")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR091")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR095")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 60.96 0)
+		(at 389.89 60.96 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -21712,7 +21013,7 @@
 		(dnp yes)
 		(uuid "944aad2e-3a5f-4438-9f8b-6f673bb56300")
 		(property "Reference" "DS6"
-			(at 389.89 55.88 0)
+			(at 389.89 66.04 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21720,7 +21021,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 66.04 0)
+			(at 389.89 55.88 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21729,7 +21030,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 87.376 0)
+			(at 389.763 34.544 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21746,7 +21047,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 73.66 0)
+			(at 389.89 48.26 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21755,7 +21056,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 71.12 0)
+			(at 389.89 50.8 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21764,7 +21065,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 85.09 0)
+			(at 389.89 36.83 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21773,7 +21074,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 68.58 0)
+			(at 389.89 53.34 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21782,7 +21083,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 82.55 0)
+			(at 389.89 39.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21791,7 +21092,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 80.01 0)
+			(at 389.89 41.91 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21800,7 +21101,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 76.2 0)
+			(at 389.89 45.72 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21829,7 +21130,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 30.48 0)
+		(at 389.89 30.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -21837,7 +21138,7 @@
 		(dnp yes)
 		(uuid "947f35d2-8e85-4ffe-8936-e49301ec217d")
 		(property "Reference" "DS3"
-			(at 389.89 25.4 0)
+			(at 389.89 35.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21845,7 +21146,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 35.56 0)
+			(at 389.89 25.4 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21854,7 +21155,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 56.896 0)
+			(at 389.763 4.064 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21871,7 +21172,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 43.18 0)
+			(at 389.89 17.78 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21880,7 +21181,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 40.64 0)
+			(at 389.89 20.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21889,7 +21190,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 54.61 0)
+			(at 389.89 6.35 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21898,7 +21199,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 38.1 0)
+			(at 389.89 22.86 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21907,7 +21208,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 52.07 0)
+			(at 389.89 8.89 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21916,7 +21217,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 49.53 0)
+			(at 389.89 11.43 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -21925,7 +21226,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 45.72 0)
+			(at 389.89 15.24 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22719,180 +22020,8 @@
 		)
 	)
 	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 60.96 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a8f271ff-6366-4f18-83a4-7a738b012ddf")
-		(property "Reference" "#PWR034"
-			(at 405.13 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 60.198 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d4857231-b781-4f34-be9a-bc0b70d448fa")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR034")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 81.28 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a90d33ae-d3c9-4838-a6d1-2083c8f17c73")
-		(property "Reference" "#PWR065"
-			(at 405.13 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 80.518 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c9db4dad-2bdf-4c87-8554-1938c4c255c9")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR065")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR093")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 140.97 0)
+		(at 389.89 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -22900,7 +22029,7 @@
 		(dnp yes)
 		(uuid "aa068c6c-7fa6-4518-b031-dcf8ab703e31")
 		(property "Reference" "DS13"
-			(at 389.89 135.89 0)
+			(at 389.89 146.05 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22908,7 +22037,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 146.05 0)
+			(at 389.89 135.89 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22917,7 +22046,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 167.386 0)
+			(at 389.763 114.554 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22934,7 +22063,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 153.67 0)
+			(at 389.89 128.27 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22943,7 +22072,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 151.13 0)
+			(at 389.89 130.81 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22952,7 +22081,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 165.1 0)
+			(at 389.89 116.84 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22961,7 +22090,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 148.59 0)
+			(at 389.89 133.35 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22970,7 +22099,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 162.56 0)
+			(at 389.89 119.38 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22979,7 +22108,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 160.02 0)
+			(at 389.89 121.92 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -22988,7 +22117,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 156.21 0)
+			(at 389.89 125.73 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23144,7 +22273,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 130.81 0)
+		(at 389.89 130.81 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -23152,7 +22281,7 @@
 		(dnp yes)
 		(uuid "ab9c7494-97cc-419b-b80b-d35852954a5b")
 		(property "Reference" "DS12"
-			(at 389.89 125.73 0)
+			(at 389.89 135.89 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23160,7 +22289,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 135.89 0)
+			(at 389.89 125.73 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23169,7 +22298,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 157.226 0)
+			(at 389.763 104.394 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23186,7 +22315,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 143.51 0)
+			(at 389.89 118.11 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23195,7 +22324,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 140.97 0)
+			(at 389.89 120.65 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23204,7 +22333,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 154.94 0)
+			(at 389.89 106.68 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23213,7 +22342,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 138.43 0)
+			(at 389.89 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23222,7 +22351,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 152.4 0)
+			(at 389.89 109.22 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23231,7 +22360,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 149.86 0)
+			(at 389.89 111.76 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23240,7 +22369,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 146.05 0)
+			(at 389.89 115.57 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23854,7 +22983,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 81.28 0)
+		(at 389.89 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -23862,7 +22991,7 @@
 		(dnp yes)
 		(uuid "bd60dcb2-19e9-4436-8d84-1ddc5e2e0bff")
 		(property "Reference" "DS8"
-			(at 389.89 76.2 0)
+			(at 389.89 86.36 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23870,7 +22999,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 86.36 0)
+			(at 389.89 76.2 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23879,7 +23008,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 107.696 0)
+			(at 389.763 54.864 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23896,7 +23025,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 93.98 0)
+			(at 389.89 68.58 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23905,7 +23034,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 91.44 0)
+			(at 389.89 71.12 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23914,7 +23043,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 105.41 0)
+			(at 389.89 57.15 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23923,7 +23052,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 88.9 0)
+			(at 389.89 73.66 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23932,7 +23061,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 102.87 0)
+			(at 389.89 59.69 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23941,7 +23070,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 100.33 0)
+			(at 389.89 62.23 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -23950,7 +23079,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 96.52 0)
+			(at 389.89 66.04 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -24376,92 +23505,6 @@
 				)
 				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
 					(reference "K19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 71.12 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c08ac651-6ce6-4b9d-80af-c93835bc30d8")
-		(property "Reference" "#PWR039"
-			(at 405.13 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 70.358 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eab6092a-ce42-432f-b5d4-2975d92b5c81")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR039")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -24965,7 +24008,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 101.6 0)
+		(at 389.89 101.6 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -24973,7 +24016,7 @@
 		(dnp yes)
 		(uuid "cdcaf24e-8184-480f-8312-2abcfb602327")
 		(property "Reference" "DS10"
-			(at 389.89 96.52 0)
+			(at 389.89 106.68 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -24981,7 +24024,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 106.68 0)
+			(at 389.89 96.52 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -24990,7 +24033,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 128.016 0)
+			(at 389.763 75.184 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25007,7 +24050,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 114.3 0)
+			(at 389.89 88.9 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25016,7 +24059,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 111.76 0)
+			(at 389.89 91.44 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25025,7 +24068,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 125.73 0)
+			(at 389.89 77.47 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25034,7 +24077,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 109.22 0)
+			(at 389.89 93.98 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25043,7 +24086,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 123.19 0)
+			(at 389.89 80.01 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25052,7 +24095,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 120.65 0)
+			(at 389.89 82.55 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25061,7 +24104,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 116.84 0)
+			(at 389.89 86.36 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25299,92 +24342,6 @@
 		)
 	)
 	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 130.81 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d23fa870-6718-4de2-bff6-949f910db6d9")
-		(property "Reference" "#PWR099"
-			(at 405.13 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 130.048 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8830d310-5b07-4453-b4c2-73955b77e7d3")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR099")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Relay_Omron:G6K-2G-Y-TR_DC24_DPDT")
 		(at 316.23 91.44 0)
 		(mirror y)
@@ -25512,94 +24469,8 @@
 		)
 	)
 	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 120.65 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d47b69f9-689c-43b1-a351-3035c41c3c54")
-		(property "Reference" "#PWR096"
-			(at 405.13 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 119.888 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "af981f6a-8c65-4acd-8005-4d3dadbc7f50")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR096")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 50.8 0)
+		(at 389.89 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -25607,7 +24478,7 @@
 		(dnp yes)
 		(uuid "d5a1db59-9c1f-429d-b5e4-582fe86763c7")
 		(property "Reference" "DS5"
-			(at 389.89 45.72 0)
+			(at 389.89 55.88 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25615,7 +24486,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 55.88 0)
+			(at 389.89 45.72 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25624,7 +24495,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 77.216 0)
+			(at 389.763 24.384 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25641,7 +24512,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 63.5 0)
+			(at 389.89 38.1 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25650,7 +24521,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 60.96 0)
+			(at 389.89 40.64 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25659,7 +24530,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 74.93 0)
+			(at 389.89 26.67 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25668,7 +24539,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 58.42 0)
+			(at 389.89 43.18 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25677,7 +24548,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 72.39 0)
+			(at 389.89 29.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25686,7 +24557,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 69.85 0)
+			(at 389.89 31.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -25695,7 +24566,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 66.04 0)
+			(at 389.89 35.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26507,7 +25378,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 91.44 0)
+		(at 389.89 91.44 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -26515,7 +25386,7 @@
 		(dnp yes)
 		(uuid "e13152dc-bdeb-4ec1-abca-b0f46c49b967")
 		(property "Reference" "DS9"
-			(at 389.89 86.36 0)
+			(at 389.89 96.52 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26523,7 +25394,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 96.52 0)
+			(at 389.89 86.36 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26532,7 +25403,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 117.856 0)
+			(at 389.763 65.024 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26549,7 +25420,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 104.14 0)
+			(at 389.89 78.74 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26558,7 +25429,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 101.6 0)
+			(at 389.89 81.28 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26567,7 +25438,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 115.57 0)
+			(at 389.89 67.31 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26576,7 +25447,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 99.06 0)
+			(at 389.89 83.82 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26585,7 +25456,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 113.03 0)
+			(at 389.89 69.85 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26594,7 +25465,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 110.49 0)
+			(at 389.89 72.39 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26603,7 +25474,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 106.68 0)
+			(at 389.89 76.2 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27406,7 +26277,7 @@
 	)
 	(symbol
 		(lib_id "LiteOnInc:LTST-C171KGKT")
-		(at 389.89 171.45 0)
+		(at 389.89 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -27414,7 +26285,7 @@
 		(dnp yes)
 		(uuid "efb79f09-e171-44ab-8791-431242eb149e")
 		(property "Reference" "DS16"
-			(at 389.89 166.37 0)
+			(at 389.89 176.53 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27422,7 +26293,7 @@
 			)
 		)
 		(property "Value" "LTST-C171KGKT"
-			(at 389.89 176.53 0)
+			(at 389.89 166.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27431,7 +26302,7 @@
 			)
 		)
 		(property "Footprint" "_LiteOnInc:LEDC2012X120N"
-			(at 390.017 197.866 0)
+			(at 389.763 145.034 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27448,7 +26319,7 @@
 			)
 		)
 		(property "Description" "LED GREEN 571 NM CLEAR SMD 2V 0805 (2012)"
-			(at 389.89 184.15 0)
+			(at 389.89 158.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27457,7 +26328,7 @@
 			)
 		)
 		(property "SupplierPartNumber" "160-1426-1-ND"
-			(at 389.89 181.61 0)
+			(at 389.89 161.29 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27466,7 +26337,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 389.89 195.58 0)
+			(at 389.89 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27475,7 +26346,7 @@
 			)
 		)
 		(property "ManufacturerPartNumber" "LTST-C171KGKT"
-			(at 389.89 179.07 0)
+			(at 389.89 163.83 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27484,7 +26355,7 @@
 			)
 		)
 		(property "Voltage" "2V"
-			(at 389.89 193.04 0)
+			(at 389.89 149.86 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27493,7 +26364,7 @@
 			)
 		)
 		(property "Size" "D0805"
-			(at 389.89 190.5 0)
+			(at 389.89 152.4 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -27502,7 +26373,7 @@
 			)
 		)
 		(property "Manufacturer" "Lite-On Inc"
-			(at 389.89 186.69 0)
+			(at 389.89 156.21 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28257,92 +27128,6 @@
 				)
 				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
 					(reference "U12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_power_symbol:GND_24V")
-		(at 398.78 91.44 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f582103a-fff9-4473-8242-8e826f8295a0")
-		(property "Reference" "#PWR081"
-			(at 405.13 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND_24V"
-			(at 407.67 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 398.78 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 398.78 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 398.78 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Name" "GND_24V"
-			(at 402.59 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ShortName" "G24V"
-			(at 398.145 90.678 90)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "443454f1-d3db-4566-a5cf-91f3dfadd1bc")
-		)
-		(instances
-			(project "A0180_eol_ecu_mix"
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/00000000-0000-0000-0000-00005ce23725"
-					(reference "#PWR081")
-					(unit 1)
-				)
-				(path "/a505f839-056b-47d1-a2e3-8d0a1723ab23/ef491100-3eee-4ba5-a819-2fe97c874943"
-					(reference "#PWR094")
 					(unit 1)
 				)
 			)

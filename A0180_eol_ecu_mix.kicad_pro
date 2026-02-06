@@ -58,7 +58,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_over_copper|251337289|55391297|bc9270df-e419-49dc-844c-f443ff532b0b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|62920000|137705000|cd39760c-523e-45e0-bb97-2a5f5f03e720|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|62920000|42295000|f18ddb5d-fedd-4fb0-8595-dc5d20dcafef|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|64280000|137705000|16d2e8b3-71ca-4883-98b8-fd540b6f86ed|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|64280000|42295000|d08d90e9-341c-4e08-b8b0-0420db58946d|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meander_settings": {
         "diff_pair_meander_defaults": {
           "corner_radius_percentage": 100,
@@ -135,6 +156,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -274,6 +296,7 @@
     "layer_presets": [
       {
         "activeLayer": -2,
+        "flipBoard": false,
         "layers": [
           0,
           1,
@@ -574,6 +597,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -1215,6 +1239,6 @@
     "PRJ_NUM": "PRJ22180",
     "REVISION": "R11",
     "REVISION_PCB": "REVISION_PCB",
-    "REVISION_SCH": "REVISION_SCH"
+    "REVISION_SCH": "A"
   }
 }
