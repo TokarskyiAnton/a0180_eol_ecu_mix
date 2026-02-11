@@ -4338,7 +4338,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TI:ULN2803ADWR"
+		(symbol "TI:ULN2803CDWR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -4346,15 +4346,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 19.05 0)
+				(at 0 15.24 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "ULN2803ADWR"
-				(at 0 -11.43 0)
+			(property "Value" "ULN2803CDWR"
+				(at 0 -18.415 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4362,8 +4362,8 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "_TI:SOIC127P1030X265-18"
-				(at 0 -26.67 0)
+			(property "Footprint" "_TI:SOIC127P1030X265-20"
+				(at 0 -33.655 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4379,8 +4379,8 @@
 					)
 				)
 			)
-			(property "Description" "TRANS 8NPN DARL 50V 0.5A 18SO"
-				(at 0 -16.51 0)
+			(property "Description" "50-V EIGHT-CHANNEL DARLINGTON A"
+				(at 0 -23.495 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4388,8 +4388,8 @@
 					(hide yes)
 				)
 			)
-			(property "SupplierDevicePackage" "18-SOIC (0.295\" 7.50mm Width)"
-				(at 0 -24.13 0)
+			(property "SupplierDevicePackage" "20-SOIC (7.5W)"
+				(at 0 -31.115 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4397,8 +4397,8 @@
 					(hide yes)
 				)
 			)
-			(property "SupplierPartNumber" "296-15777-1-ND"
-				(at 0 -13.97 0)
+			(property "SupplierPartNumber" "296-ULN2803CDWRTR-ND"
+				(at 0 -20.955 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4407,7 +4407,7 @@
 				)
 			)
 			(property "Supplier" "Digi-Key"
-				(at 0 -21.59 0)
+				(at 0 -28.575 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4415,8 +4415,8 @@
 					(hide yes)
 				)
 			)
-			(property "ManufacturerPartNumber" "ULN2803ADWR"
-				(at 0 -8.89 0)
+			(property "ManufacturerPartNumber" "ULN2803CDWR"
+				(at 0 -15.875 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4424,7 +4424,7 @@
 				)
 			)
 			(property "Manufacturer" "Texas Instruments"
-				(at 0 -19.05 0)
+				(at 0 -26.035 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -4432,30 +4432,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "ULN2803ADWR_0_0"
-				(pin passive line
-					(at 17.78 -5.08 180)
-					(length 5.08)
-					(name "COM"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-			)
-			(symbol "ULN2803ADWR_0_1"
+			(symbol "ULN2803CDWR_0_1"
 				(rectangle
-					(start -12.7 17.78)
-					(end 12.7 -7.62)
+					(start -10.16 13.97)
+					(end 10.16 -13.97)
 					(stroke
 						(width 0)
 						(type solid)
@@ -4465,11 +4445,49 @@
 					)
 				)
 			)
-			(symbol "ULN2803ADWR_1_1"
+			(symbol "ULN2803CDWR_1_0"
+				(pin power_in line
+					(at 17.78 -8.89 180)
+					(length 7.62)
+					(name "COM"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -11.43 180)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ULN2803CDWR_1_1"
 				(pin input line
-					(at -17.78 15.24 0)
-					(length 5.08)
-					(name "I1"
+					(at -17.78 11.43 0)
+					(length 7.62)
+					(name "1B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4485,9 +4503,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 12.7 0)
-					(length 5.08)
-					(name "I2"
+					(at -17.78 8.89 0)
+					(length 7.62)
+					(name "2B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4503,9 +4521,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 10.16 0)
-					(length 5.08)
-					(name "I3"
+					(at -17.78 6.35 0)
+					(length 7.62)
+					(name "3B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4521,9 +4539,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 7.62 0)
-					(length 5.08)
-					(name "I4"
+					(at -17.78 3.81 0)
+					(length 7.62)
+					(name "4B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4539,9 +4557,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 5.08 0)
-					(length 5.08)
-					(name "I5"
+					(at -17.78 1.27 0)
+					(length 7.62)
+					(name "5B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4557,9 +4575,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "I6"
+					(at -17.78 -1.27 0)
+					(length 7.62)
+					(name "6B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4575,9 +4593,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 0 0)
-					(length 5.08)
-					(name "I7"
+					(at -17.78 -3.81 0)
+					(length 7.62)
+					(name "7B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4593,9 +4611,9 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -2.54 0)
-					(length 5.08)
-					(name "I8"
+					(at -17.78 -6.35 0)
+					(length 7.62)
+					(name "8B"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4610,9 +4628,9 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -17.78 -5.08 0)
-					(length 5.08)
+				(pin power_in line
+					(at -17.78 -8.89 0)
+					(length 7.62)
 					(name "GND"
 						(effects
 							(font
@@ -4629,9 +4647,63 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 15.24 180)
-					(length 5.08)
-					(name "O1"
+					(at -17.78 -11.43 0)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 11.43 180)
+					(length 7.62)
+					(name "1C"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 8.89 180)
+					(length 7.62)
+					(name "2C"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 6.35 180)
+					(length 7.62)
+					(name "3C"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4646,10 +4718,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 17.78 12.7 180)
-					(length 5.08)
-					(name "O2"
+				(pin output line
+					(at 17.78 3.81 180)
+					(length 7.62)
+					(name "4C"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4664,10 +4736,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 17.78 10.16 180)
-					(length 5.08)
-					(name "O3"
+				(pin output line
+					(at 17.78 1.27 180)
+					(length 7.62)
+					(name "5C"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4682,10 +4754,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "O4"
+				(pin output line
+					(at 17.78 -1.27 180)
+					(length 7.62)
+					(name "6C"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4700,10 +4772,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 17.78 5.08 180)
-					(length 5.08)
-					(name "O5"
+				(pin output line
+					(at 17.78 -3.81 180)
+					(length 7.62)
+					(name "7C"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4718,10 +4790,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 17.78 2.54 180)
-					(length 5.08)
-					(name "O6"
+				(pin output line
+					(at 17.78 -6.35 180)
+					(length 7.62)
+					(name "8C"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -4729,42 +4801,6 @@
 						)
 					)
 					(number "13"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "O7"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -2.54 180)
-					(length 5.08)
-					(name "O8"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "11"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -6579,6 +6615,10 @@
 		(uuid "36f6f800-b1e9-440a-9e4f-9b024696fe5d")
 	)
 	(no_connect
+		(at 66.04 137.16)
+		(uuid "3c9fdd20-81fc-4ba3-9400-922653e4bd85")
+	)
+	(no_connect
 		(at 391.16 95.25)
 		(uuid "46dc4428-580d-43d5-aacd-590fdab33f80")
 	)
@@ -6653,6 +6693,10 @@
 	(no_connect
 		(at 66.04 124.46)
 		(uuid "b4b131b1-69b0-4eaf-b341-1375f2052b13")
+	)
+	(no_connect
+		(at 30.48 137.16)
+		(uuid "b4fb5e65-8be7-48f9-9ae3-818065285bee")
 	)
 	(no_connect
 		(at 215.9 220.98)
@@ -28880,8 +28924,8 @@
 		)
 	)
 	(symbol
-		(lib_id "TI:ULN2803ADWR")
-		(at 48.26 129.54 0)
+		(lib_id "TI:ULN2803CDWR")
+		(at 48.26 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28896,8 +28940,8 @@
 				)
 			)
 		)
-		(property "Value" "ULN2803ADWR"
-			(at 48.26 140.97 0)
+		(property "Value" "ULN2803CDWR"
+			(at 48.26 144.145 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28905,8 +28949,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_TI:SOIC127P1030X265-18"
-			(at 48.26 156.21 0)
+		(property "Footprint" "_TI:SOIC127P1030X265-20"
+			(at 48.26 159.385 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28915,24 +28959,15 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 124.46 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Description" "TRANS 8NPN DARL 50V 0.5A 18SO"
-			(at 48.26 146.05 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierDevicePackage" "18-SOIC (0.295\" 7.50mm Width)"
-			(at 48.26 153.67 0)
+		(property "Description" "50-V EIGHT-CHANNEL DARLINGTON A"
+			(at 48.26 149.225 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28940,8 +28975,17 @@
 				(hide yes)
 			)
 		)
-		(property "SupplierPartNumber" "296-15777-1-ND"
-			(at 48.26 143.51 0)
+		(property "SupplierDevicePackage" "20-SOIC (7.5W)"
+			(at 48.26 156.845 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "SupplierPartNumber" "296-ULN2803CDWRTR-ND"
+			(at 48.26 146.685 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28950,7 +28994,7 @@
 			)
 		)
 		(property "Supplier" "Digi-Key"
-			(at 48.26 151.13 0)
+			(at 48.26 154.305 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28958,8 +29002,8 @@
 				(hide yes)
 			)
 		)
-		(property "ManufacturerPartNumber" "ULN2803ADWR"
-			(at 48.26 138.43 0)
+		(property "ManufacturerPartNumber" "ULN2803CDWR"
+			(at 48.26 141.605 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -28967,7 +29011,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 48.26 148.59 0)
+			(at 48.26 151.765 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -29028,6 +29072,12 @@
 		)
 		(pin "9"
 			(uuid "1d5b629b-1df2-47f2-87c8-2227a6caf959")
+		)
+		(pin "20"
+			(uuid "4963d132-3275-449d-bb9b-032d070ebfb3")
+		)
+		(pin "19"
+			(uuid "e782024e-456e-425d-9e67-93a6eb80a27d")
 		)
 		(instances
 			(project "A0180_eol_ecu_mix"
