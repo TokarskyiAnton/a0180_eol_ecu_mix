@@ -46,3 +46,4 @@ fp-info-cache
 #Include folder
 !assembly/*.csv
 !pnp/*.csv
+!bom/*.csv
